@@ -15,6 +15,7 @@
 		EEF6A34319B7E8ED00D04F3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEF6A34119B7E8ED00D04F3E /* InfoPlist.strings */; };
 		EEF6A34519B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A34419B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests.m */; };
 		EEF6A35219B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A35119B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m */; };
+		EEF6A35A19B7FBB000D04F3E /* GNTextFieldsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A35919B7FBB000D04F3E /* GNTextFieldsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		EEF6A34419B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNKeyboardAwareScrollViewTests.m; sourceTree = "<group>"; };
 		EEF6A35019B7EB2F00D04F3E /* GNKeyboardAwareScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNKeyboardAwareScrollView.h; sourceTree = "<group>"; };
 		EEF6A35119B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNKeyboardAwareScrollView.m; sourceTree = "<group>"; };
+		EEF6A35819B7FBB000D04F3E /* GNTextFieldsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTextFieldsManager.h; sourceTree = "<group>"; };
+		EEF6A35919B7FBB000D04F3E /* GNTextFieldsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextFieldsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 			children = (
 				EEF6A35019B7EB2F00D04F3E /* GNKeyboardAwareScrollView.h */,
 				EEF6A35119B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m */,
+				EEF6A35819B7FBB000D04F3E /* GNTextFieldsManager.h */,
+				EEF6A35919B7FBB000D04F3E /* GNTextFieldsManager.m */,
 				EEF6A32B19B7E8ED00D04F3E /* Supporting Files */,
 			);
 			path = GNKeyboardAwareScrollView;
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF6A35A19B7FBB000D04F3E /* GNTextFieldsManager.m in Sources */,
 				EEF6A35219B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +409,7 @@
 				EEF6A34A19B7E8ED00D04F3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEF6A34B19B7E8ED00D04F3E /* Build configuration list for PBXNativeTarget "GNKeyboardAwareScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +418,7 @@
 				EEF6A34D19B7E8ED00D04F3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
