@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EEF6A32919B7E8ED00D04F3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF6A32819B7E8ED00D04F3E /* Foundation.framework */; };
-		EEF6A32E19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEF6A32D19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.h */; };
-		EEF6A33019B7E8ED00D04F3E /* GNKeyboardAwareScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A32F19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.m */; };
 		EEF6A33719B7E8ED00D04F3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF6A33619B7E8ED00D04F3E /* XCTest.framework */; };
 		EEF6A33819B7E8ED00D04F3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF6A32819B7E8ED00D04F3E /* Foundation.framework */; };
 		EEF6A33A19B7E8ED00D04F3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF6A33919B7E8ED00D04F3E /* UIKit.framework */; };
 		EEF6A33D19B7E8ED00D04F3E /* libGNKeyboardAwareScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF6A32519B7E8ED00D04F3E /* libGNKeyboardAwareScrollView.a */; };
 		EEF6A34319B7E8ED00D04F3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEF6A34119B7E8ED00D04F3E /* InfoPlist.strings */; };
 		EEF6A34519B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A34419B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests.m */; };
+		EEF6A35219B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF6A35119B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				EEF6A32E19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +43,14 @@
 		EEF6A32519B7E8ED00D04F3E /* libGNKeyboardAwareScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGNKeyboardAwareScrollView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF6A32819B7E8ED00D04F3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEF6A32C19B7E8ED00D04F3E /* GNKeyboardAwareScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNKeyboardAwareScrollView-Prefix.pch"; sourceTree = "<group>"; };
-		EEF6A32D19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNKeyboardAwareScrollView.h; sourceTree = "<group>"; };
-		EEF6A32F19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNKeyboardAwareScrollView.m; sourceTree = "<group>"; };
 		EEF6A33519B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNKeyboardAwareScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF6A33619B7E8ED00D04F3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EEF6A33919B7E8ED00D04F3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EEF6A34019B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GNKeyboardAwareScrollViewTests-Info.plist"; sourceTree = "<group>"; };
 		EEF6A34219B7E8ED00D04F3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EEF6A34419B7E8ED00D04F3E /* GNKeyboardAwareScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNKeyboardAwareScrollViewTests.m; sourceTree = "<group>"; };
+		EEF6A35019B7EB2F00D04F3E /* GNKeyboardAwareScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNKeyboardAwareScrollView.h; sourceTree = "<group>"; };
+		EEF6A35119B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNKeyboardAwareScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +108,8 @@
 		EEF6A32A19B7E8ED00D04F3E /* GNKeyboardAwareScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				EEF6A32D19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.h */,
-				EEF6A32F19B7E8ED00D04F3E /* GNKeyboardAwareScrollView.m */,
+				EEF6A35019B7EB2F00D04F3E /* GNKeyboardAwareScrollView.h */,
+				EEF6A35119B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m */,
 				EEF6A32B19B7E8ED00D04F3E /* Supporting Files */,
 			);
 			path = GNKeyboardAwareScrollView;
@@ -224,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEF6A33019B7E8ED00D04F3E /* GNKeyboardAwareScrollView.m in Sources */,
+				EEF6A35219B7EB2F00D04F3E /* GNKeyboardAwareScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
