@@ -54,6 +54,7 @@
     CGRect rect = [[notification.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     rect = [self.superview convertRect:rect fromView:[[[UIApplication sharedApplication] delegate] window]];
     [self setContentInset:UIEdgeInsetsMake(0, 0, MAX(self.frame.size.height-rect.origin.y,0), 0)];
+    [self setScrollIndicatorInsets:self.contentInset];
 }
 
 @end
