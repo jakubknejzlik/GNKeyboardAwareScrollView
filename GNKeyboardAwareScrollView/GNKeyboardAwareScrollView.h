@@ -10,6 +10,8 @@
 
 @interface GNKeyboardAwareScrollView : UIScrollView
 
+@property (nonatomic,readonly) UIEdgeInsets estimatedContentInset;
+
 @end
 
 
