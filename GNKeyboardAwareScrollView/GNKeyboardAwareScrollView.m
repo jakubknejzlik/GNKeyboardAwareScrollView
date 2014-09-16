@@ -20,14 +20,14 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self initialize];
+        [self gn_initializeKeyboardObservation];
     }
     return self;
 }
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self initialize];
+        [self gn_initializeKeyboardObservation];
     }
     return self;
 }
@@ -36,7 +36,7 @@
     [self detachKeyboardObservation];
 }
 
--(void)initialize{
+-(void)gn_initializeKeyboardObservation{
     [self attachKeyboardObservation];
 }
 -(void)gn_updateKeyboardContentInset:(UIEdgeInsets)contentInset{
