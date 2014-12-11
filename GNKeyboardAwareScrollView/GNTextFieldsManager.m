@@ -30,8 +30,9 @@
 
 -(void)initializeTextFields{
     for (UITextField *tf in self.textFields) {
-        if(tf == [self.textFields lastObject])continue;
-        tf.returnKeyType = UIReturnKeyNext;
+        if(tf != [self.textFields lastObject]){
+            tf.returnKeyType = UIReturnKeyNext;
+        }
         tf.delegate = self;
     }
 }
