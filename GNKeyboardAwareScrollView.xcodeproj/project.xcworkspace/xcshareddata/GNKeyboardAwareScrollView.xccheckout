@@ -10,29 +10,29 @@
 	<string>GNKeyboardAwareScrollView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>705BFC31-1040-47B5-8610-9745436FE3FC</key>
+		<key>1726F9E7EB954C8534FBE0E3F1086F0CF44B3286</key>
 		<string>https://github.com/jakubknejzlik/GNKeyboardAwareScrollView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GNKeyboardAwareScrollView.xcodeproj/project.xcworkspace</string>
+	<string>GNKeyboardAwareScrollView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>705BFC31-1040-47B5-8610-9745436FE3FC</key>
+		<key>1726F9E7EB954C8534FBE0E3F1086F0CF44B3286</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jakubknejzlik/GNKeyboardAwareScrollView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>705BFC31-1040-47B5-8610-9745436FE3FC</string>
+	<string>1726F9E7EB954C8534FBE0E3F1086F0CF44B3286</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>705BFC31-1040-47B5-8610-9745436FE3FC</string>
+			<string>1726F9E7EB954C8534FBE0E3F1086F0CF44B3286</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GNKeyboardAwareScrollView</string>
 		</dict>

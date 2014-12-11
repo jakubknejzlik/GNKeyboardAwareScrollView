@@ -29,13 +29,11 @@
 
 
 -(void)initializeTextFields{
-    UIReturnKeyType lastTextFieldReturnKeyType = [[self.textFields lastObject] returnKeyType];
     for (UITextField *tf in self.textFields) {
+        if(tf == [self.textFields lastObject])continue;
         tf.returnKeyType = UIReturnKeyNext;
         tf.delegate = self;
     }
-    
-    [[self.textFields lastObject] setReturnKeyType:lastTextFieldReturnKeyType];
 }
 
 -(void)selectFirstResponder{
@@ -71,7 +69,7 @@
 }
 +(void)fillArray:(NSMutableArray *)array withTextFieldsFromView:(UIView *)view{
     for (UIView *subview in view.subviews) {
-        if ([subview isKindOfClass:[UITextField class]] && subview.tag > 0) {
+        if ([subview isKindOfClass:[UITextField class]]) {
             [array addObject:subview];
         }
         [self fillArray:array withTextFieldsFromView:subview];
