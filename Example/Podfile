@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'GNKeyboardAwareScrollView', :exclusive => true do
+  pod "GNKeyboardAwareScrollView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "GNKeyboardAwareScrollView", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
