@@ -1,20 +1,29 @@
 //
-//  RFKeyboardAwareScrollView.m
-//  16
+//  GNKeyboardAwareScrollView.m
+//  Pods
 //
-//  Created by Jakub Knejzlik on 10/08/14.
-//  Copyright (c) 2014 Jakub Knejzlik. All rights reserved.
+//  Created by Jakub Knejzlik on 29/04/15.
+//
 //
 
 #import "GNKeyboardAwareScrollView.h"
 
-@interface UIScrollView (KeyboardAwarePrivate)
+@interface UIScrollView (KeyboardAwareScrollView)
+
 -(void)gn_updateKeyboardContentInset:(UIEdgeInsets)contentInset;
+
+-(void)attachKeyboardObservation;
+-(void)detachKeyboardObservation;
+
 @end
 
 
+
+@interface GNKeyboardAwareScrollView ()
+@property (nonatomic) UIEdgeInsets originalContentInsets;
+@end
+
 @implementation GNKeyboardAwareScrollView
-@synthesize estimatedContentInset = _estimatedContentInset;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -32,6 +41,11 @@
     return self;
 }
 
+-(void)setContentInset:(UIEdgeInsets)contentInset{
+    self.originalContentInsets = contentInset;
+    [super setContentInset:contentInset];
+}
+
 -(void)dealloc{
     [self detachKeyboardObservation];
 }
@@ -39,16 +53,30 @@
 -(void)gn_initializeKeyboardObservation{
     [self attachKeyboardObservation];
 }
--(void)gn_updateKeyboardContentInset:(UIEdgeInsets)contentInset{
-    [super gn_updateKeyboardContentInset:contentInset];
-    _estimatedContentInset = contentInset;
-}
-
 
 @end
 
 
-@implementation UIScrollView (KeyboardAware)
+
+#pragma mark - KeyboardAwareScrollView categories
+@implementation GNKeyboardAwareScrollView (KeyboardAwareScrollView)
+
+-(void)gn_updateKeyboardContentInset:(UIEdgeInsets)contentInset{
+    
+    contentInset.top = MAX(contentInset.top,self.originalContentInsets.top);
+    
+    [super gn_updateKeyboardContentInset:contentInset];
+    _estimatedContentInset = contentInset;
+}
+
+@end
+
+
+
+
+
+#pragma mark - ScrollView categories
+@implementation UIScrollView (KeyboardAwareScrollView)
 
 -(void)attachKeyboardObservation{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gn_keyboardFrameChanged:) name:UIKeyboardWillHideNotification object:nil];
