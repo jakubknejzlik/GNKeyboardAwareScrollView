@@ -1,21 +1,21 @@
 //
-//  GNKeyboardAwareScrollView.m
+//  GNKeyboardAwareTableView.m
 //  Pods
 //
-//  Created by Jakub Knejzlik on 29/04/15.
+//  Created by Jakub Knejzlik on 13/05/15.
 //
 //
 
-#import "GNKeyboardAwareScrollView.h"
+#import "GNKeyboardAwareTableView.h"
 
 #import "UIScrollView+GNKeyboardAware.h"
 
 
-@interface GNKeyboardAwareScrollView ()
+@interface GNKeyboardAwareTableView ()
 @property (nonatomic) UIEdgeInsets originalContentInsets;
 @end
 
-@implementation GNKeyboardAwareScrollView
+@implementation GNKeyboardAwareTableView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -45,8 +45,8 @@
 @end
 
 
-#pragma mark - KeyboardAwareScrollView categories
-@implementation GNKeyboardAwareScrollView (KeyboardAwareScrollView)
+#pragma mark - KeyboardAwareTableView categories
+@implementation GNKeyboardAwareTableView (KeyboardAwareScrollView)
 
 -(void)GN_updateKeyboardContentInset:(UIEdgeInsets)contentInset{
     
@@ -57,4 +57,3 @@
 }
 
 @end
-

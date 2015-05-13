@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GNKeyboardAwareScrollView : UIScrollView
-
 @property (nonatomic,readonly) UIEdgeInsets estimatedContentInset;
-
 @end

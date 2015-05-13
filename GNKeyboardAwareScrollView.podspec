@@ -9,10 +9,10 @@
 
 Pod::Spec.new do |s|
   s.name             = "GNKeyboardAwareScrollView"
-  s.version          = "0.1.1"
-  s.summary          = "UIScrollView subclass for handling content inset by keyboard."
+  s.version          = "0.1.2"
+  s.summary          = "UIScrollView and UITableView subclasses for handling content inset by keyboard."
   s.description      = <<-DESC
-                       UIScrollView subclass wich handles content insets automaticaly with keyboard appearance.
+                       UIScrollView and UITableView subclasses wich handles content insets automaticaly with keyboard appearance.
                        DESC
   s.homepage         = "https://github.com/jakubknejzlik/GNKeyboardAwareScrollView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
