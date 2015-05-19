@@ -23,11 +23,16 @@
 -(void)GN_keyboardFrameChanged:(NSNotification *)notification{
     CGRect rect = [[notification.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     rect = [self.superview convertRect:rect fromView:[[[UIApplication sharedApplication] delegate] window]];
-    [self GN_updateKeyboardContentInset:UIEdgeInsetsMake(0, 0, MAX(self.frame.size.height-rect.origin.y,0), 0)];
+    
+    UIEdgeInsets insets = UIEdgeInsetsMake(0, 0, MAX(CGRectGetMaxY(self.frame)-CGRectGetMinY(rect),0), 0);
+    [self GN_updateContentInset:insets];
+    [self GN_updateScrollIndicatorInset:insets];
 }
--(void)GN_updateKeyboardContentInset:(UIEdgeInsets)contentInset{
+-(void)GN_updateContentInset:(UIEdgeInsets)contentInset{
     [self setContentInset:contentInset];
-    [self setScrollIndicatorInsets:contentInset];
+}
+-(void)GN_updateScrollIndicatorInset:(UIEdgeInsets)scrollIndicatorInset{
+    [self setScrollIndicatorInsets:scrollIndicatorInset];
 }
 
 @end

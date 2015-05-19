@@ -13,6 +13,7 @@
 
 @interface GNKeyboardAwareScrollView ()
 @property (nonatomic) UIEdgeInsets originalContentInsets;
+@property (nonatomic) UIEdgeInsets originalScrollIndicatorInsets;
 @end
 
 @implementation GNKeyboardAwareScrollView
@@ -37,6 +38,10 @@
     self.originalContentInsets = contentInset;
     [super setContentInset:contentInset];
 }
+-(void)setScrollIndicatorInsets:(UIEdgeInsets)scrollIndicatorInsets{
+    self.originalScrollIndicatorInsets = scrollIndicatorInsets;
+    [super setScrollIndicatorInsets:scrollIndicatorInsets];
+}
 
 -(void)dealloc{
     [self GN_detachKeyboardObservation];
@@ -48,11 +53,11 @@
 #pragma mark - KeyboardAwareScrollView categories
 @implementation GNKeyboardAwareScrollView (KeyboardAwareScrollView)
 
--(void)GN_updateKeyboardContentInset:(UIEdgeInsets)contentInset{
+-(void)GN_updateContentInset:(UIEdgeInsets)contentInset{
     
     contentInset.top = MAX(contentInset.top,self.originalContentInsets.top);
     
-    [super GN_updateKeyboardContentInset:contentInset];
+    [super GN_updateContentInset:contentInset];
     _estimatedContentInset = contentInset;
 }
 

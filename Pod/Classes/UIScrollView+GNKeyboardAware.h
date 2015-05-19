@@ -10,7 +10,8 @@
 
 @interface UIScrollView (GNKeyboardAware)
 
--(void)GN_updateKeyboardContentInset:(UIEdgeInsets)contentInset;
+-(void)GN_updateContentInset:(UIEdgeInsets)contentInset;
+-(void)GN_updateScrollIndicatorInset:(UIEdgeInsets)scrollIndicatorInset;
 
 -(void)GN_attachKeyboardObservation;
 -(void)GN_detachKeyboardObservation;
